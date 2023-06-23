@@ -11,8 +11,8 @@ class Main:
         self.HOST = "http://34.95.34.5/"  # Setup your host here
         self.TOKEN = "69aWxpk655"  # Setup your token here
         self.TICKETS = None  # Setup your tickets here
-        self.T_MAX = "500" # Setup your max temperature here
-        self.T_MIN = "1"  # Setup your min temperature here
+        self.T_MAX = None  # Setup your max temperature here
+        self.T_MIN = None  # Setup your min temperature here
         self.DATABASE = "oxygenDB"  # Setup your database here
 
     def __del__(self):
