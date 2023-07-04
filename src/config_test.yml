@@ -1,0 +1,9 @@
+# config_test.yml
+
+variables:
+  HOST: "http://34.95.34.5"
+  TOKEN: ""
+  TICKETS: "5"
+  T_MAX: "600"
+  T_MIN: "2"
+  DATABASE: "oxygenDB"
