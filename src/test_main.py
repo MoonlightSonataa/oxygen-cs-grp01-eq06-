@@ -19,7 +19,6 @@ class MainTest(unittest.TestCase):
             config = yaml.safe_load(config_file)
         os.environ.update(config.get("variables", {}))
 
-
     def test_default_values(self):
         with patch.dict("os.environ", {}):
             main = Main()
@@ -66,7 +65,6 @@ class MainTest(unittest.TestCase):
             except ValueError as err:
                 print(f"Caught exception: {err}")
                 raise err
-
 
     @patch("requests.get")
     def test_analyze_datapoint_above_max(self, mock_get):

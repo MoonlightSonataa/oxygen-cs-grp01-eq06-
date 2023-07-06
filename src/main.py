@@ -120,6 +120,7 @@ class Main:
         else:
             print("Token is valid.")
 
+
 if __name__ == "__main__":
     main = Main()
     main.start()
