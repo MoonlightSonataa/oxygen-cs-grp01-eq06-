@@ -1,7 +1,7 @@
 ## To implement
 # Dockerfile
 # FROM python
-FROM fsfe/pipenv
+FROM fsfe/pipenv:bitnami-3.8
 
 WORKDIR /usr/src/app
 
