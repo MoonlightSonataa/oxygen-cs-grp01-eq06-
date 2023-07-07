@@ -1,13 +1,13 @@
 ## To implement
 # Dockerfile
-FROM python:3
+FROM python
 
 WORKDIR /usr/src/app
 
 COPY . .
 USER root
 RUN pip install pipenv --user
-# RUN pipenv --version
+RUN pipenv --version
 
 # Install pipenv and compilation dependencies
 # RUN pip install pipenv
@@ -17,9 +17,13 @@ RUN pip install pipenv --user
 #COPY Pipfile .
 #COPY Pipfile.lock .
 # RUN PIPENV_VENV_IN_PROJECT=1 pipenv install --deploy
-# RUN pipenv install
+RUN pipenv install
+
+RUN pipenv run start
+ENTRYPOINT ["python", "-m", "pipenv", "run"]
+CMD ["start"]
 
 
 # CMD [ "pipenv run", "start" ]
-CMD [ "pip", "start" ]
+# CMD [ "pip", "start" ]
 # CMD ["pipenv", "run", "python", "src/main.py"]
