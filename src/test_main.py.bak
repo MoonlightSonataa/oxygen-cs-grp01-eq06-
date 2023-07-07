@@ -87,7 +87,7 @@ class MainTest(unittest.TestCase):
             f"{main.host}/api/hvac/{main.token}/TurnOnHeater/{main.tickets}",
             timeout=5,
         )
-#sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+#ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
     @patch("requests.get")
     def test_analyze_datapoint_in_range(self, mock_get):
         main = Main()
