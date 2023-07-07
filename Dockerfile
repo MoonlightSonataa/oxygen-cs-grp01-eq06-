@@ -1,13 +1,14 @@
 ## To implement
 # Dockerfile
-FROM python
+# FROM python
+FROM paketobuildpacks/pipenv:latest
 
 WORKDIR /usr/src/app
 
 COPY . .
-USER root
-RUN pip install pipenv --user
-# RUN pipenv --version
+# USER root
+# RUN pip install pipenv --user
+RUN pipenv --version
 
 # Install pipenv and compilation dependencies
 # RUN pip install pipenv
