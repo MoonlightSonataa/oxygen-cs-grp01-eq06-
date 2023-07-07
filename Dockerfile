@@ -7,6 +7,8 @@ WORKDIR /usr/src/app
 COPY . .
 USER root
 RUN pip install pipenv --user
+RUN pipenv --version
+
 # Install pipenv and compilation dependencies
 # RUN pip install pipenv
 RUN apt-get update && apt-get install -y --no-install-recommends gcc
@@ -18,4 +20,5 @@ RUN PIPENV_VENV_IN_PROJECT=1 pipenv install --deploy
 RUN pipenv install
 
 
-CMD [ "pipenv run", "start" ]
+# CMD [ "pipenv run", "start" ]
+CMD [ "pip run", "start" ]
