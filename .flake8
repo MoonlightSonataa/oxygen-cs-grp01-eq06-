@@ -3,13 +3,14 @@ max-line-length = 120
 exclude = .git,__pycache__,venv
 ignore = E203,E266,E501,W503
 select = B,C,E,F,W,T4,B9
+include = src
 
 [tool:pytest]
-addopts = --verbose --cov=your_module --cov-report=term --cov-report=html
+addopts = --verbose --cov=src --cov-report=term --cov-report=html
 
 [coverage:run]
 branch = True
-source = your_module
+source = src
 
 [mypy]
 plugins = pydantic.mypy
@@ -21,7 +22,7 @@ no_implicit_optional = True
 
 [isort]
 line_length = 120
-known_first_party = your_module
+known_first_party = src
 default_section = THIRDPARTY
 combine_as_imports = true
 include_trailing_comma = true
