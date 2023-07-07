@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 COPY . .
 USER root
 RUN pip install pipenv --user
-RUN pipenv --version
+# RUN pipenv --version
 
 # Install pipenv and compilation dependencies
 # RUN pip install pipenv
@@ -21,4 +21,5 @@ RUN pipenv install
 
 
 # CMD [ "pipenv run", "start" ]
-CMD [ "pip run", "start" ]
+# CMD [ "pip run", "start" ]
+CMD ["pipenv", "run", "python", "src/main.py"]
