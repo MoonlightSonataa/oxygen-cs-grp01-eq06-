@@ -118,7 +118,7 @@ class Main:
             print("Token is missing or empty.")
             raise ValueError("TOKEN is not defined or empty in the configuration file.")
         else:
-            print("Token is valid.")
+            print("test: Token is valid.")
 
 
 if __name__ == "__main__":
