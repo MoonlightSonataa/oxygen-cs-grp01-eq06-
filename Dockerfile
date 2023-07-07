@@ -1,7 +1,7 @@
 ## To implement
 # Dockerfile
 # FROM python
-FROM paketobuildpacks/pipenv:latest
+FROM fsfe/pipenv
 
 WORKDIR /usr/src/app
 
