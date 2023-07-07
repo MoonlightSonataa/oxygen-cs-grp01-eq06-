@@ -1,1 +1,7 @@
 ## To implement
+repos:
+  - repo: https://github.com/ambv/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+      - id: flake8-max-line-length
+        args: [--max-line-length=120]
