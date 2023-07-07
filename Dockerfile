@@ -17,13 +17,13 @@ RUN pipenv --version
 #COPY Pipfile .
 #COPY Pipfile.lock .
 # RUN PIPENV_VENV_IN_PROJECT=1 pipenv install --deploy
-RUN pipenv install
+# RUN pipenv install
 
-RUN pipenv run start
-ENTRYPOINT ["python", "-m", "pipenv", "run"]
-CMD ["start"]
+# RUN pipenv run start
+# ENTRYPOINT ["python", "-m", "pipenv", "run"]
+# CMD ["start"]
 
 
 # CMD [ "pipenv run", "start" ]
-# CMD [ "pip", "start" ]
+CMD [ "pip", "start" ]
 # CMD ["pipenv", "run", "python", "src/main.py"]
