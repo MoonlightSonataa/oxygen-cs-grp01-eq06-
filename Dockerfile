@@ -21,5 +21,5 @@ RUN pipenv install
 
 
 # CMD [ "pipenv run", "start" ]
-# CMD [ "pip run", "start" ]
-CMD ["pipenv", "run", "python", "src/main.py"]
+CMD [ "pip", "start" ]
+# CMD ["pipenv", "run", "python", "src/main.py"]
