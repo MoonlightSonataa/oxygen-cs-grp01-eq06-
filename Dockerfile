@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends gcc
 COPY Pipfile .
 COPY Pipfile.lock .
 RUN PIPENV_VENV_IN_PROJECT=1 pipenv install --deploy
-RUN pipenv install
+# RUN pipenv install
 
 
 # CMD [ "pipenv run", "start" ]
