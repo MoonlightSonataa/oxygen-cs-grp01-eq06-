@@ -10,7 +10,7 @@ RUN pip install psycopg2-binary
 RUN pip install -r requirements.txt
 # USER root
 # RUN pip install pipenv --user
-RUN pipenv --version
+# RUN pipenv --version
 
 # Install pipenv and compilation dependencies
 # RUN pip install pipenv
