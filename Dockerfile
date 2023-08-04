@@ -6,6 +6,7 @@ FROM fsfe/pipenv:bitnami-3.8
 WORKDIR /usr/src/app
 
 COPY . .
+RUN pip install psycopg2-binary
 RUN pip install -r requirements.txt
 # USER root
 # RUN pip install pipenv --user
