@@ -124,7 +124,8 @@ class Main:
                 dbname="LOG680_DEVOPS",
                 user="postgres",
                 password="postgres",
-                host="35.192.151.166",
+                # host="35.192.151.166",    # for dev usage
+                host="localhost",   # for deployment only
             )
 
             # Open a cursor to perform database operations
