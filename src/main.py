@@ -31,7 +31,8 @@ class Main:
     def send_temperature_to_postgres(self, timestamp, temperature):
         try:
             conn = psycopg2.connect(
-                host="35.192.151.166",  # your database host
+                # host="35.192.151.166",  # your database host    # for dev usage
+                host="localhost",   # for deployment only
                 database="LOG680_DEVOPS",  # your database name
                 user="postgres",  # your database username
                 password="postgres"  # your database password
